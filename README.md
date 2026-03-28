@@ -60,7 +60,7 @@ The capstone skills guide you through each stage. All planning docs update as yo
 
 - Check that `.claude/settings.json` exists in your repo root and contains the plugin reference
 - Try restarting Claude Code — plugins resolve on launch
-- Manual install if auto-resolution fails: `claude plugins add github:concept-first/capstone-skills`
+- Manual install if auto-resolution fails: `claude plugins add https://github.com/crawfis/AI-Programming-Capstone.git`
 - Verify skills are available by asking: "What capstone skills do I have?"
 
 </details>
