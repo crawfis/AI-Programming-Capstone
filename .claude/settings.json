@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": []
+  },
+  "plugins": [
+    {
+      "name": "capstone-skills",
+      "source": "github:concept-first/capstone-skills"
+    }
+  ]
+}
