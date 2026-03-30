@@ -1,6 +1,6 @@
 # Project Brief
 
-*This file is populated by the `capstone-kickoff` skill. Say "Help me brainstorm my capstone project" to get started.*
+*This file is populated by the `capstone-kickoff` skill. Say `/capstone-kickoff` to get started.*
 
 Once populated, this file will contain:
 

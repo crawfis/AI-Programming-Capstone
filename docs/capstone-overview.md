@@ -92,9 +92,9 @@ Use Superpowers `writing-skills` to create custom skills.
 
 ## Getting Started
 
-**Step 1:** Say "Help me brainstorm my capstone project"
+**Step 1:** Say `/capstone-kickoff`
 
-That's it. The `capstone-kickoff` skill takes over from there. It'll ask you questions — one at a time. Be honest about what interests you, what you know, and what you want to learn. The more honest you are, the better the pipeline it builds for you.
+That's it. The capstone kickoff skill takes over from there. It'll ask you questions — one at a time. Be honest about what interests you, what you know, and what you want to learn. The more honest you are, the better the pipeline it builds for you.
 
 **Step 2:** Follow the pipeline. Your stage guides will be generated for your specific project, stack, and goals.
 

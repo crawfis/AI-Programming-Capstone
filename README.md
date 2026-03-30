@@ -4,9 +4,9 @@
 
 1. Click **"Use this template"** to create your repo
 2. Clone it and open in Claude Code
-3. Say: **"Help me brainstorm my capstone project"**
+3. Say: **`/capstone-kickoff`**
 
-That's it. The capstone skills take over from there.
+That's it. The capstone kickoff skill takes over from there.
 
 ---
 
