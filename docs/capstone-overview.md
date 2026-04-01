@@ -13,6 +13,31 @@ Now the prescribed projects end. This one is yours.
 
 ---
 
+## What You Bring to This Capstone
+
+You've finished 16 lessons. Here's what you already know how to use — capstone builds on all of it.
+
+### MCP Servers (configured in Claude Code)
+| Server | What It Does Here |
+|--------|------------------|
+| Filesystem | Claude reads your planning docs and src/ directly — no copy-paste |
+| Context7 | Verify library docs and install instructions before using them |
+| Web Search | Research architectures, find ecosystems, validate tech choices |
+| GitHub Issues | Create issues from your task list (stretch) |
+| Git MCP | AI reads your diffs, helps write PRs |
+
+### Prompt Techniques
+Use these throughout the pipeline — they're not just for lessons:
+- **Quality-First** — share your user stories, acceptance criteria, and existing code before asking for implementation; the more context, the better the output
+- **AI interviews you** — "Ask me questions to help me define this feature" (surfaces gaps in your stories before you write code)
+- **Do not build yet** — "Compare 3 approaches, pros/cons only" before committing to a design or architecture
+- **Verify the claim** — after any AI generation: "Check each acceptance criterion. Report Pass/Fail/Partial with evidence." Never accept "it works" without a test.
+
+### Git Workflow
+You know: `branch` → `commit per task` → `PR via gh CLI + Git MCP`. Use it. Every slice gets a branch.
+
+---
+
 ## What This Is
 
 This is your capstone project. You choose what to build. You choose the language, framework, and platform. You assemble your own AI development stack. You ship something you're proud of.
@@ -64,7 +89,9 @@ You don't build everything from scratch. You compose your development stack from
 
 **Everything else: search first.**
 
-Your AI's training data has a cutoff date. Any specific ecosystem, install command, or tool it recommends from memory may be outdated, renamed, or superseded. During kickoff, the `capstone-kickoff` skill will search for the latest and most relevant ecosystems for your specific stack and domain — and show you what it found and when.
+Your AI's training data has a cutoff date. Any specific ecosystem, install command, or tool it recommends from memory may be outdated, renamed, or superseded. The `capstone-kickoff` skill handles this in two passes:
+- **Phase 0 (Ecosystem Pulse)** — runs immediately at kickoff, before any questions. Does a generic search for what's active in the AI workflow ecosystem right now, surfaces anything new or deprecated, and offers to update local skill files if a newer version is found.
+- **Phase 4 (Toolchain Selection)** — after your stack is known, searches specifically for ecosystems and community skills that match your project type and domain.
 
 This is intentional. Learning to verify AI recommendations against live sources is part of what this capstone teaches.
 

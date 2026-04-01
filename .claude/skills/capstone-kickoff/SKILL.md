@@ -40,6 +40,48 @@ You are a capstone project advisor. Your job is to help a student define, scope,
 
 ---
 
+## Phase 0: ECOSYSTEM PULSE
+
+Run this immediately when the skill is invoked — before asking the student anything.
+
+Announce:
+> "Before we start planning your project, let me check what's current in the AI development ecosystem. Your AI's knowledge has a cutoff date, so I'll search live rather than guess."
+
+Run these web searches:
+1. `"Claude Code skill ecosystems [current year]"` — active plugin/skill registries
+2. `"superpowers skills Claude Code [current year]"` — superpowers updates or forks
+3. `"best AI coding workflow tools [current year]"` — new harnesses, agents, or orchestrators
+
+For any specific tool that appears prominently in results, use Context7 to resolve its current docs.
+
+Present an **Ecosystem Pulse** summary to the student:
+
+```
+## Ecosystem Pulse — [today's date]
+
+**What I searched:** [list the queries]
+
+**Active & maintained:**
+- [ecosystem name] — [what it does, last updated]
+- ...
+
+**New since training cutoff:** [anything notable, flagged explicitly]
+**Deprecated or renamed:** [anything that changed]
+
+**Already installed in this project:** Superpowers (brainstorming, planning, TDD, debugging, code review)
+```
+
+**Then: local skill update check.**
+- If results surface a newer version of an already-installed ecosystem, surface the upgrade path and ask:
+  > "A newer version of [X] appears to be available. Want me to update your local skill files now, or after we finish kickoff?"
+  If yes, run the install/update before continuing.
+- Check the student's `skills/` directory. If it's empty, note: "You'll create domain-specific skills in `skills/` during the BUILD stage — I'll remind you at the right time."
+- Everything found, installed, updated, or skipped gets recorded in the kickoff decision-log entry (Artifact 4).
+
+Then proceed to Phase 1.
+
+---
+
 ## Phase 1: DISCOVERY
 
 Ask these questions adaptively (skip or modify based on prior answers):
@@ -268,8 +310,17 @@ Write to the student's `planning/` directory (create it if it doesn't exist). Al
 [Which frameworks were applied, key findings, recommendations]
 
 ## Toolchain
+### MCP Servers (already configured)
+| Server | Use During Capstone |
+|--------|---------------------|
+| Filesystem | Claude reads planning docs and src/ directly |
+| Context7 | Verify library docs and install instructions |
+| Web Search | Research architectures, find ecosystems |
+| GitHub Issues | Create issues from task list (stretch) |
+| Git MCP | AI reads diffs, assists with PRs |
+
 ### Install
-[Ecosystem install commands]
+[Ecosystem install commands from Ecosystem Pulse findings]
 
 ### Existing Skills to Use
 [List of relevant skills from installed ecosystems]

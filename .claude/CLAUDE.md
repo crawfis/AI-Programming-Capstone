@@ -36,3 +36,20 @@ Capstone skills guide each stage. Superpowers skills handle process discipline
 - `capstone-stage-gen` — generate/regenerate project-specific stage guides
 - `capstone-sprint-check` — checkpoint: demo, test, update docs, plan next slice
 - `capstone-critique` — final evaluation across 7 dimensions
+
+## Student Context (Lesson 16 Graduates)
+
+Students arrive with these tools already configured and understood:
+
+**MCP Servers:** Filesystem, Context7, Web Search, GitHub Issues (stretch), Git MCP
+
+**Prompt Techniques they know:**
+- Quality-First: share user stories + acceptance criteria + existing code before requesting implementation
+- "AI interviews you": let AI ask questions to surface gaps in features and planning
+- "Do not build yet": compare approaches before committing — research mode first
+- "Verify the claim": separate review pass after any AI-generated code, demanding Pass/Fail/Partial against acceptance criteria with evidence
+
+**Git:** branch per feature, commit per task, PR via `gh` CLI with Git MCP
+
+When students use these techniques, engage with them directly — don't re-explain the concept.
+When students submit a vague or naive prompt for a non-trivial task, redirect them toward Quality-First: ask for their user story and acceptance criteria before generating code.
